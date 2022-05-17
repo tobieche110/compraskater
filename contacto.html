@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Quienes somos?</title>
+    <title>Contactanos</title>
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
 
@@ -36,81 +36,40 @@
           </div>
         </div>
     </nav>
-    
-    <!--MAIN-->
-    <main style="background-color: grey;  border-bottom: 1px solid black; padding-bottom: 25px;">
-        <!--HEAD-->
-        <header style="padding-top: 25px;">
-            <div class="container-sm site-header">
+        <!--MAIN-->
 
-                <div class="row justify-content-between">
+    <main style="border-bottom: 1px solid black; padding-bottom: 25px;">
 
-                    <div class="col-md-6 col-sm-12 site-header__title pe-md-5 col-content">
-            
-                    <h1 class="site-title">
-                        Somos un grupo de skaters argentinos con un solo objetivo:
-                    </h1>
-                    <h3>
-                        Lograr que consigas el skate de tus sueños.
-                    </h3>
-            
-                    </div>
+        <div class="container-sm">
+            <h1>¿Tenés alguna consulta? ¿Te gustaría trabajar con nosotros?</h1>
+            <p>¡Completá el formulario y envianos un mensaje!</p>
 
-                    <div class="col-md-6 col-sm-12 col-image">
-                    <img src="./images/quienessomos1.jpg" alt="img-qnes1" class="rounded" style="height: 400px;">
-                    </div>
-                </div>
-            </div>
-        </header>
+            <form action="contacto" method="POST">
+                <p>Ingrese su correo:</p>
+                <input type="email" name="mail" required>
 
-        <!--SECCION MEDIA-->
-        <section class="" style="padding-top: 25px;">
-            <div class="container-sm">
-                <div class="row justify-content-between">
+                <p></p>
+                <p>¿Por qué desea contactarnos?</p>
+                <select name="porque" placeholder="Seleccionar..." required>
 
-                    <div class="col-md-6 col-sm-12 col-image">
-                        <img src="./images/build-skateboard.jpg" alt="buildskate" class="rounded" style="height: 360px">
-                    </div>
+                    <option>Quiero trabajar con ustedes</option>
+                    
+                    <option>Bug/Error en la página</option>
+                    
+                    <option>Otra razón</option>
+                    
+                </select>
 
-                    <div class="col-md-6 col-sm-12 col-content">
+                <p></p>
+                <p><textarea rows="10" cols="150" placeholder="Ingrese su consulta..." required></textarea></p>
 
-                        <h2 class="section__title">
-                            Contamos con lo último en tablas,
-                        </h2>
-
-                        <h3 class="section__description">
-                            rulemanes, trucks y todo lo que necesitas para construirlo.
-                        </h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section style="padding-top: 25px;">
-            <div class="container-sm">
-
-                <div class="row justify-content-between">
-
-                    <div class="col-md-6 col-sm-12 col-content">
-            
-                    <h2 class="">
-                        Armá tu Skate
-                    </h1>
-                    <h3>
-                        Con la herramienta de última tecnología podés construir una patineta que se amolde a tus gustos y necesidades.
-                    </h3>
-            
-                    </div>
-
-                    <div class="col-md-6 col-sm-12 col-image">
-                    <img src="./images/anatomyskate.webp" alt="img-qnes3" class="rounded" style="height: 305px;">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
         
-    
+
+    </main>
+
     <!--SPONSORS-->
     <section class="text-center" style="margin: 50px;">
         <div class="container-sm">
@@ -121,11 +80,13 @@
         </div>
     </section>
     
+
+
     <!--FOOTER-->
     <footer style="padding-top: 25px; padding-bottom: 15px; border-top: 1px solid black;">
         <div class="container-sm">
-          <div class="row">
-  
+            <div class="row">
+    
             <div class="col-md-6 col-sm-12 mx-auto">
                 <div class="mx-auto text-center">
                     <p>Contactanos:</p>
@@ -155,9 +116,9 @@
             </div>
 
 
-          </div>
+            </div>
         </div>
-      </footer>
-  
+    </footer>
 </body>
+
 </html>
