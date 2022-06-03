@@ -41,4 +41,17 @@
         </div>
       </div>
     </div>
+    
+    <?php
+
+        if (isset($_SESSION["usuario"])){
+            echo '<p align="center"> Usted ha iniciado sesión como administrador </p>';
+            echo '<p align="center"><a href = "logout.php">Cerrar Sesión</a></p>';
+        } else{
+            echo '<p align="center"> ¿Administrador? Click <a href="login.php">Aquí</a> para iniciar sesión </p>';
+        }
+
+
+    ?>
+    
 </footer>

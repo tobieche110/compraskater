@@ -20,6 +20,8 @@
         }
     </style>
   
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <nav class="navbar py-5" style="border-bottom: 1px solid black ;">

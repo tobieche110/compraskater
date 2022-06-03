@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Letra Skater";
+    src: url('fonts/Skaters.ttf');
+}
+  
+body {
+    font-family: "Letra Skater";
+}

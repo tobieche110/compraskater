@@ -1,3 +1,7 @@
+<?php
+@session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +23,9 @@
             display: inline-block;
         }
     </style>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./styles.css">
   
 </head>
 <body>
