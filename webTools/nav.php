@@ -1,3 +1,7 @@
+<?
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,6 +37,12 @@
                 <a class="btn btn-nav btn-light btn-outline-dark" href="#">Armá tu Skate</a>
                 <a class="btn btn-nav btn-light btn-outline-dark" href="quienessomos.php">¿Quiénes somos?</a>
                 <a class="btn btn-nav btn-light btn-outline-dark" href="contacto.php">Contactanos</a>
+                <?php 
+                    if (isset($_SESSION["usuario"])){
+                        echo '<a class="btn btn-nav btn-secondary btn-outline-dark" href="agregarProducto.php">Agregar productos</a>';
+                    }
+                
+                ?>
             </div>
         </div>
 </nav>
