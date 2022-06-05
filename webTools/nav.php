@@ -34,7 +34,7 @@
 
             <div class="justify-content-end" id="navbarNav">
                 <a class="btn btn-nav btn-light btn-outline-dark" href="productos.php">Productos</a>
-                <a class="btn btn-nav btn-light btn-outline-dark" href="#">Armá tu Skate</a>
+                <a class="btn btn-nav btn-light btn-outline-dark" href="armaTuSkate.php">Armá tu Skate</a>
                 <a class="btn btn-nav btn-light btn-outline-dark" href="quienessomos.php">¿Quiénes somos?</a>
                 <a class="btn btn-nav btn-light btn-outline-dark" href="contacto.php">Contactanos</a>
                 <?php 
