@@ -1,0 +1,8 @@
+El sitio web debe cumplir como minimo con los siguientes lineamientos: 
+    - LISTO 2 (o más) niveles de páginas web. Esto es, la principal de presentación y entrada (Home) y la de detalle para cada opción de navegación prevista.
+    - Todas las páginas navegables y sin enlaces rotos.
+    - LISTO Al menos 2 perfiles de usuario (administrador/público o editor/lector, etc). Donde uno de ellos (al menos) opera bajo Sesiones.
+    - LISTO Al menos 1 página de backend con operaciones ABM para uno de los perfiles. Debe admitir manejo de imágenes (upload) además de datos de tipo texto y lógicos (caso de checks)
+    - EN PROCESO Al menos 1 página que tenga operaciones de consulta, FILTRADO, ordenamiento y PAGINACION (típicos en listados o reporte con detalle) para otros perfiles diferentes al de ABM.
+    - Debe contar con validaciones en javascript (del lado cliente).
+    - LISTO Almacenamiento centralizado en base de datos (mysql).
