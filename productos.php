@@ -137,7 +137,7 @@
                     echo "0 results";
                 }
 
-                $query = mysqli_query($db,"SELECT `id` FROM `productos` WHERE tipo = '".$_GET['tipo']."' ORDER BY marca desc");
+                $query = mysqli_query($db, $sql);
                 $total_resultados = mysqli_num_rows($query);
 
             ?>

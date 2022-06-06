@@ -44,9 +44,9 @@
                 
                 ?>
                 <br>
-                <form name="search" method="post" action="search.php" class="input-group mb-3" style="padding-top: 5px;">
+                <form name="searchbar" method="post" action="search.php" class="input-group mb-3" style="padding-top: 5px;">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="..." aria-label="Recipient's username">
+                        <input type="text" class="form-control" name="search" placeholder="..." required>
                         <div class="input-group-append">
                             <button class="btn btn-dark btn-outline-light" type="submit">Buscar</button>
                         </div>
