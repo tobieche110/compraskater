@@ -43,6 +43,15 @@
                     }
                 
                 ?>
+                <br>
+                <form name="search" method="post" action="search.php" class="input-group mb-3" style="padding-top: 5px;">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="..." aria-label="Recipient's username">
+                        <div class="input-group-append">
+                            <button class="btn btn-dark btn-outline-light" type="submit">Buscar</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
 </nav>
