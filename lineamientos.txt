@@ -3,6 +3,6 @@ El sitio web debe cumplir como minimo con los siguientes lineamientos:
     - Todas las páginas navegables y sin enlaces rotos.
     - LISTO Al menos 2 perfiles de usuario (administrador/público o editor/lector, etc). Donde uno de ellos (al menos) opera bajo Sesiones.
     - LISTO Al menos 1 página de backend con operaciones ABM para uno de los perfiles. Debe admitir manejo de imágenes (upload) además de datos de tipo texto y lógicos (caso de checks)
-    - EN PROCESO Al menos 1 página que tenga operaciones de consulta, FILTRADO, ordenamiento y PAGINACION (típicos en listados o reporte con detalle) para otros perfiles diferentes al de ABM.
+    - EN PROCESO Al menos 1 página que tenga operaciones de CONSULTA, filtrado, ordenamiento y paginacion (típicos en listados o reporte con detalle) para otros perfiles diferentes al de ABM.
     - Debe contar con validaciones en javascript (del lado cliente).
     - LISTO Almacenamiento centralizado en base de datos (mysql).
