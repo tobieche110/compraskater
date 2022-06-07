@@ -1,8 +1,8 @@
 @font-face {
-    font-family: "Letra Skater";
-    src: url('fonts/Skaters.ttf');
+    font-family: "Raleway-VariableFont_wght";
+    src: url('fonts/Raleway-VariableFont_wght.ttf');
 }
   
 body {
-    font-family: "Letra Skater";
+    font-family: "Raleway-VariableFont_wght" !important;
 }
