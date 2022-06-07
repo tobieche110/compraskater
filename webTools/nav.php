@@ -36,8 +36,8 @@
 
             <div class="justify-content-end" id="navbarNav">
                 <a class="btn btn-nav btn-light btn-outline-dark" href="productos.php">Productos</a>
-                <a class="btn btn-nav btn-light btn-outline-dark" href="armaTuSkate.php">Armá tu Skate</a>
-                <a class="btn btn-nav btn-light btn-outline-dark" href="quienessomos.php">¿Quiénes somos?</a>
+                <a class="btn btn-nav btn-light btn-outline-dark disabled" href="armaTuSkate.php">Armá tu Skate</a>
+                <a class="btn btn-nav btn-light btn-outline-dark" href="quienessomos2.php">¿Quiénes somos?</a>
                 <?php 
                     if (isset($_SESSION["usuario"])){
                         echo '<a class="btn btn-nav btn-secondary btn-outline-dark" href="agregarProducto.php">Agregar productos</a>';

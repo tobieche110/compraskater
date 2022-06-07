@@ -42,7 +42,7 @@
                     <div class="col-md-6 col-sm-12 site-header__title pe-md-5 col-content">
             
                     <h1 class="site-title">
-                        Somos un grupo de skaters argentinos con un solo objetivo:
+                        <strong>Somos un grupo de skaters argentinos con un solo objetivo:</strong>
                     </h1>
                     <h3>
                         Lograr que consigas el skate de tus sueños.
@@ -51,7 +51,7 @@
                     </div>
 
                     <div class="col-md-6 col-sm-12 col-image">
-                    <img src="./images/quienessomos1.jpg" alt="img-qnes1" class="rounded" style="height: 400px;">
+                    <img src="./images/quienessomos1.jpg" alt="img-qnes1" class="rounded" style="width: 100%;">
                     </div>
                 </div>
             </div>
@@ -69,8 +69,7 @@
                     <div class="col-md-6 col-sm-12 col-content">
 
                         <h2 class="section__title">
-                            Contamos con lo último en tablas,
-                        </h2>
+                            <strong>Contamos con lo último en tablas,</strong></h2>
 
                         <h3 class="section__description">
                             rulemanes, trucks y todo lo que necesitas para construirlo.
@@ -88,7 +87,7 @@
                     <div class="col-md-6 col-sm-12 col-content">
             
                     <h2 class="">
-                        Armá tu Skate
+                        <strong>Armá tu Skate</strong>
                     </h1>
                     <h3>
                         Con la herramienta de última tecnología podés construir una patineta que se amolde a tus gustos y necesidades.
