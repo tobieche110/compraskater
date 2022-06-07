@@ -39,7 +39,7 @@
                 <h1><strong><?php echo $precio ?></strong></h1>
                 <h3> En 12 x $<?php echo round($cuotas,2); ?> cuotas sin interés</h3>
                 
-                <div style="padding-top: 20%; padding-left: 5%;">
+                <div class="text-center" style="padding-top: 20%;">
                     <button class="btn btn-lg btn-primary" disabled>¡Compralo en nuestra sucursal más cercana!</button>
                 </div>
             </div>
