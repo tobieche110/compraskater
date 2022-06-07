@@ -85,7 +85,7 @@
         ?>
                 
                 <div class="col-md-3 col-sm-6 mx-auto" style="padding-top: 15px;">
-                    <div class="card rounded" style="width: 105%; text-align: center;">
+                   <div class="card rounded" style="width: 100%; text-align: center;">
 
                         <img class="card-img-top" src= "<?php echo $img; ?>" alt="product_img"> <!-- imagen -->
 
