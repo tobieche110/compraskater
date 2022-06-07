@@ -1,10 +1,12 @@
 <!--SPONSORS-->
 <section class="text-center" style="margin: 50px;">
-    <div class="container-sm">
-        <img src="./images/sp-element.png" alt="element" class="" style="height: 100px; padding-right: 20px;">
-        <img src="./images/sp-thrasher.png" alt="thrasher" class="" style="height: 100px;">
-        <img src="./images/sp-kalima.png" alt="kalima" class="" style="height: 100px;">
-        <img src="./images/sp-stcruz.png" alt="stcruz" class="" style="height: 100px;">
+    <div class="container-lg">
+        <div class="row">
+            <img src="./images/sp-element.png" alt="element" class="" style="width: 35%;">
+            <img src="./images/sp-thrasher.png" alt="thrasher" class="" style="width: 25%;">
+            <img src="./images/sp-kalima.png" alt="kalima" class="" style="width: 20%;">
+            <img src="./images/sp-stcruz.png" alt="stcruz" class="" style="width: 20%;">
+        </div>
     </div>
 </section>
 
