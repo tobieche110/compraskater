@@ -15,9 +15,9 @@
 <body>
     <?php
         include("./webTools/nav.php");
-        $nombre = $_GET['nombre'];
+        $id = $_GET['nombre'];
 
-        $query = mysqli_query($db,"SELECT * FROM productos WHERE nombre = '$nombre'");
+        $query = mysqli_query($db,"SELECT * FROM productos WHERE id = '$id'");
         $res = mysqli_fetch_array($query);
 
         $nombre = $res['nombre'];
@@ -30,8 +30,8 @@
     <div class="container-xl" style="padding: 4%; border-bottom: 1px solid black;">
         <div class="row">
 
-            <div class="col-md-4 col-sm-12 mx-auto">
-                <img class ="rounded" style="width: 100%; border: 1px solid black" src="<?php echo $img ?>" alt="productImg">
+            <div id="zoomContainer" class="col-md-4 col-sm-12 mx-auto">
+                <img id="zoomedImg" class ="rounded" style="width: 100%; border: 1px solid black" src="<?php echo $img ?>" alt="productImg">
             </div>
             
             <div class="col-md-8 col-sm-12 mx-auto">
@@ -50,5 +50,7 @@
     <?php
         include("./webTools/footer.php")
     ?>
+
+    <script src="zoom.js"></script>
 </body>
 </html>

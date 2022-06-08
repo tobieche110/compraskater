@@ -59,7 +59,7 @@ session_start();
                 <br>
                 <div class="form-group">
                     <label style="font-size: 20px">Tipo</label>
-                    <select name="tipo" class="form-control" placeholder="Seleccionar..." required>
+                    <select name="tipo" class="form-select" placeholder="Seleccionar..." required>
                         <option>tabla</option>
                         <option>rulemanes</option>
                         <option>ruedas</option>

@@ -58,7 +58,7 @@
 ?>
         
         <div class="photo col-md-3 col-sm-6 mx-auto" style="padding-top: 15px;">
-        <a style="text-decoration: none;" href="./pagProducto.php?nombre=<?php echo $nombre ?>"><div class="card rounded" style="width: 105%; text-align: center;">
+        <a style="text-decoration: none;" href="./pagProducto.php?nombre=<?php echo $idarray[$i] ?>"><div class="card rounded" style="width: 105%; text-align: center;">
 
                 <img class="card-img-top" src= "<?php echo $img; ?>" alt="product_img"> <!-- imagen -->
 

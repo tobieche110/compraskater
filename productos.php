@@ -79,7 +79,6 @@
                     $query = mysqli_query($db,"SELECT * FROM productos WHERE id = '$idarray[$id]'");
                     $res = mysqli_fetch_array($query);
 
-
                     $nombre = $res['nombre'];
                     $precio = '$' . $res['precio'];
                     $img = 'uploaded-img/' . $res['img'];
@@ -87,7 +86,7 @@
         ?>
                 
                 <div class="photo col-md-3 col-sm-6 mx-auto" style="padding-top: 15px;">
-                    <a style="text-decoration: none;" href="./pagProducto.php?nombre=<?php echo $nombre ?>"><div class="card rounded" style="width: 100%; text-align: center;">
+                    <a style="text-decoration: none;" href="./pagProducto.php?nombre=<?php echo $idarray[$id] ?>"><div class="card rounded" style="width: 100%; text-align: center;">
 
                         <img class="card-img-top" src= "<?php echo $img; ?>" alt="product_img"> <!-- imagen -->
 
@@ -175,18 +174,18 @@
                 
             ?>
                     
-                    <div class="photo col-md-3 col-sm-6 mx-auto" style="padding-top: 15px;">
-                    <a style="text-decoration: none;" href="./pagProducto.php?nombre=<?php echo $nombre ?>"><div class="card rounded" style="width: 105%; text-align: center;">
+                <div class="photo col-md-3 col-sm-6 mx-auto" style="padding-top: 15px;">
+                    <a style="text-decoration: none;" href="./pagProducto.php?nombre=<?php echo $idarray[$i] ?>"><div class="card rounded" style="width: 100%; text-align: center;">
 
-                            <img class="card-img-top" src= "<?php echo $img; ?>" alt="product_img"> <!-- imagen -->
+                        <img class="card-img-top" src= "<?php echo $img; ?>" alt="product_img"> <!-- imagen -->
 
-                            <div class="card-body">
-                                <h2 style="color: black"> <?php echo $nombre ?> </h2>
+                        <div class="card-body">
+                            <h2 style="color: black"> <?php echo $nombre ?> </h2>
 
-                                <h3 style="color: black" class="card-subtitle mt-2"> <?php echo $precio ?> </h3>
-                            </div>
-                        </div></a>
-                    </div>
+                            <h3 style="color: black" class="card-subtitle mt-2"> <?php echo $precio ?> </h3>
+                        </div>
+                    </div></a>
+                </div>
             <?php
                 }
             ?>
