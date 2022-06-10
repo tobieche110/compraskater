@@ -18,68 +18,77 @@ session_start();
 
     ?>
 
-        <div class="container-sm">
+        <div class="container-sm" style="padding-top: 1%;">
 
-            <h1>Agregar nuevos productos a la base de datos</h1>
-            <form action="subir.php" method="post" enctype="multipart/form-data">
+            <div class="row">
 
-            <p style="color: red">
-				<?php
-				    if( isset($_SESSION['Error']) ){
-				    	echo $_SESSION['Error'];
-				    	unset($_SESSION['Error']);}
-				?>
-			</p>
-
-            <p style="color: green">
-				<?php
-				    if( isset($_SESSION['Success']) ){
-				    	echo $_SESSION['Success'];
-				    	unset($_SESSION['Success']);}
-				?>
-			</p>
-                
-                <div class="form-group">
-                    <label style="font-size: 20px">Nombre del producto</label>
-                    <input type="text" class="form-control" placeholder="Ingrese el nombre del producto" name="nombre" required>
+                <div class="col-md-4 col-sm-12 mx-auto">
+                    <img id="insertImg" class = "rounded" style="width: 100%; border: 1px solid black;" src="./images/imgPlaceHolder.png" alt="productImg">
                 </div>
 
-                <br>
-                <div class="form-group">
-                    <label style="font-size: 20px">Precio</label>
-                    <input type="number" class="form-control" placeholder="Ingrese el precio" name="precio" required>
-                </div>
-                
-                <br>
-                <div class="form-group">
-                    <label style="font-size: 20px">Marca</label>
-                    <input type="text" class="form-control" placeholder="Ingrese la marca" name="marca" required>
-                </div>
+                <div class="col-md-8 col-sm-12 mx-auto">
+                    <h1>Agregar nuevos productos a la base de datos</h1>
+                    <form action="subir.php" method="post" enctype="multipart/form-data">
 
-                <br>
-                <div class="form-group">
-                    <label style="font-size: 20px">Tipo</label>
-                    <select name="tipo" class="form-select" placeholder="Seleccionar..." required>
-                        <option>tabla</option>
-                        <option>rulemanes</option>
-                        <option>ruedas</option>
-                        <option>trucks</option>
-                        <option>hardware</option>
-                        <option>lija</option>
-                        <option>skateCompleto</option>
-                    </select>
+                    <p style="color: red">
+                        <?php
+                            if( isset($_SESSION['Error']) ){
+                                echo $_SESSION['Error'];
+                                unset($_SESSION['Error']);}
+                        ?>
+                    </p>
+
+                    <p style="color: green">
+                        <?php
+                            if( isset($_SESSION['Success']) ){
+                                echo $_SESSION['Success'];
+                                unset($_SESSION['Success']);}
+                        ?>
+                    </p>
+                        
+                        <div class="form-group">
+                            <label style="font-size: 20px">Nombre del producto</label>
+                            <input type="text" class="form-control" placeholder="Ingrese el nombre del producto" name="nombre" required>
+                        </div>
+
+                        <br>
+                        <div class="form-group">
+                            <label style="font-size: 20px">Precio</label>
+                            <input type="number" class="form-control" placeholder="Ingrese el precio" name="precio" required>
+                        </div>
+                        
+                        <br>
+                        <div class="form-group">
+                            <label style="font-size: 20px">Marca</label>
+                            <input type="text" class="form-control" placeholder="Ingrese la marca" name="marca" required>
+                        </div>
+
+                        <br>
+                        <div class="form-group">
+                            <label style="font-size: 20px">Tipo</label>
+                            <select name="tipo" class="form-select" placeholder="Seleccionar..." required>
+                                <option>tabla</option>
+                                <option>rulemanes</option>
+                                <option>ruedas</option>
+                                <option>trucks</option>
+                                <option>hardware</option>
+                                <option>lija</option>
+                                <option>skateCompleto</option>
+                            </select>
+                        </div>
+                        
+                        <br>
+                        <div class="form-group">
+                            <label style="font-size: 20px">Imagen</label>
+                            <input type="file"  name="img" class="form-control form-control-sm" id="formFile" style="font-size: 20px" required>
+                        </div>
+                        
+                        <br>
+                        <button type="submit" class="btn btn-dark" name="submit" value="Subir Archivos">Enviar</button>
+                        
+                    </form>
                 </div>
-                
-                <br>
-                <div class="form-group">
-                    <label style="font-size: 20px">Imagen</label>
-					<input type="file"  name="img" class="form-control form-control-sm" id="formFile" style="font-size: 20px" required>
-                </div>
-                
-                <br>
-                <button type="submit" class="btn btn-dark" name="submit" value="Subir Archivos">Enviar</button>
-                
-            </form>
+            </div>
         </div>
 
     <?php 
@@ -89,6 +98,8 @@ session_start();
         include('./webTools/footer.php'); 
     
     ?>
+
+    <script src="formFileOnChange.js"></script>
 
 </body>
 </html>

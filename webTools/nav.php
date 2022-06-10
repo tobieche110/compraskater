@@ -40,7 +40,7 @@
                 <a class="btn btn-nav btn-light btn-outline-dark" href="quienessomos2.php">¿Quiénes somos?</a>
                 <?php 
                     if (isset($_SESSION["usuario"])){
-                        echo '<a class="btn btn-nav btn-secondary btn-outline-dark" href="agregarProducto.php">Agregar productos</a>';
+                        echo '<a class="btn btn-nav btn-secondary btn-outline-dark" href="crud.php">Administrar Productos</a>';
                     }
                 
                 ?>
