@@ -57,29 +57,29 @@ include("db.php");
                         ?>
                     </p>
                     
-                    <form action="editarBack.php?id=<?php echo $id ?>" method="post" enctype="multipart/form-data">
+                    <form id="formUpload" action="editarBack.php?id=<?php echo $id ?>" method="post" enctype="multipart/form-data">
                         
                         <div class="form-group">
                             <label style="font-size: 20px">Nombre del producto</label>
-                            <input type="text" class="form-control" value="<?php echo $nombre ?>" name="nombre" required>
+                            <input type="text" class="form-control" value="<?php echo $nombre ?>" name="nombre" id="nombre">
                         </div>
 
                         <br>
                         <div class="form-group">
                             <label style="font-size: 20px">Precio</label>
-                            <input type="number" class="form-control" value="<?php echo $precio ?>" name="precio" required>
+                            <input type="number" class="form-control" value="<?php echo $precio ?>" name="precio" id="precio">
                         </div>
                         
                         <br>
                         <div class="form-group">
                             <label style="font-size: 20px">Marca</label>
-                            <input type="text" class="form-control" value="<?php echo $marca ?>" name="marca" required>
+                            <input type="text" class="form-control" value="<?php echo $marca ?>" name="marca" id="marca">
                         </div>
 
                         <br>
                         <div class="form-group">
                             <label style="font-size: 20px">Tipo</label>
-                            <select name="tipo" class="form-select" required>
+                            <select id="tipo" name="tipo" class="form-select">
                                 <option
                                 <?php 
                                 if($tipo == "tabla"){
@@ -144,6 +144,7 @@ include("db.php");
                     </form>
                 </div>
         </div>
+        </div>
 
     <?php 
         } else{
@@ -151,13 +152,10 @@ include("db.php");
         }
         include('./webTools/footer.php');
 
-        if($tipo == "tabla"){
-            echo "selected";
-        }
-    
     ?>
 
     <script src="formFileOnChange.js"></script>
+    <script src="validar.js"></script>
 
 </body>
 </html>

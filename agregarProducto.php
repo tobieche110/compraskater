@@ -28,7 +28,7 @@ session_start();
 
                 <div class="col-md-8 col-sm-12 mx-auto">
                     <h1>Agregar nuevos productos a la base de datos</h1>
-                    <form action="subir.php" method="post" enctype="multipart/form-data">
+                    <form id="formUpload" action="subir.php" method="post" enctype="multipart/form-data">
 
                     <p style="color: red">
                         <?php
@@ -48,25 +48,25 @@ session_start();
                         
                         <div class="form-group">
                             <label style="font-size: 20px">Nombre del producto</label>
-                            <input type="text" class="form-control" placeholder="Ingrese el nombre del producto" name="nombre" required>
+                            <input type="text" class="form-control" placeholder="Ingrese el nombre del producto" name="nombre" id="nombre">
                         </div>
 
                         <br>
                         <div class="form-group">
                             <label style="font-size: 20px">Precio</label>
-                            <input type="number" class="form-control" placeholder="Ingrese el precio" name="precio" required>
+                            <input type="number" class="form-control" placeholder="Ingrese el precio" name="precio" id="precio">
                         </div>
                         
                         <br>
                         <div class="form-group">
                             <label style="font-size: 20px">Marca</label>
-                            <input type="text" class="form-control" placeholder="Ingrese la marca" name="marca" required>
+                            <input type="text" class="form-control" placeholder="Ingrese la marca" name="marca" id="marca">
                         </div>
 
                         <br>
                         <div class="form-group">
                             <label style="font-size: 20px">Tipo</label>
-                            <select name="tipo" class="form-select" placeholder="Seleccionar..." required>
+                            <select id="tipo" name="tipo" class="form-select" placeholder="Seleccionar...">
                                 <option>tabla</option>
                                 <option>rulemanes</option>
                                 <option>ruedas</option>
@@ -80,7 +80,7 @@ session_start();
                         <br>
                         <div class="form-group">
                             <label style="font-size: 20px">Imagen</label>
-                            <input type="file"  name="img" class="form-control form-control-sm" id="formFile" style="font-size: 20px" required>
+                            <input type="file"  name="img" class="form-control form-control-sm" id="formFile" style="font-size: 20px">
                         </div>
                         
                         <br>
@@ -100,6 +100,7 @@ session_start();
     ?>
 
     <script src="formFileOnChange.js"></script>
+    <script src="validar.js"></script>
 
 </body>
 </html>
